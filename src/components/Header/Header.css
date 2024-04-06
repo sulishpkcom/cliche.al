@@ -1,0 +1,167 @@
+.top-header {
+    background-color: #222;
+    padding: 10px;
+    margin: 0px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & span.top-header-tagline {
+        font-family: "Jost";
+        color: white;
+        text-align: center;
+    }
+}
+
+.header-wrapper {
+    font-family: "Jost", sans-serif;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px 0px;
+    .search-container {
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        .search-container-inner {
+            border: 1px solid #22222238;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px;
+            padding-right: 15px;
+            input.search-input {
+                border: none!important;
+                outline-style: none!important;
+                padding: 10px 10px;
+                width: 80%;
+                &:focus {
+                    border: none!important;
+                    outline-style: none!important;
+                }
+            }
+            svg {
+                font-size: 25px;
+                cursor: pointer;
+                fill: #22222238;
+            }
+        }
+    }
+    .logo-container {
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .customer-header-links {
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        .my-account-container svg {
+            font-size: 25px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .my-wishlist-container {
+            gap: 0px!important;
+            svg {
+            font-size: 25px;
+            margin-right: 10px;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        span {
+            position: relative;
+            top: -15px;
+            right: 5px;
+            background-color: #f3caca;
+            padding: 0px 7px;
+            border-radius: 100px;
+            margin-left: -15px;
+        }
+        }
+        .my-shopping-cart-container {
+            gap: 0px;
+            svg {
+            font-size: 25px;
+            margin-right: 10px;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        span {
+            position: relative;
+            top: -15px;
+            right: 5px;
+            background-color: #f3caca;
+            padding: 0px 7px;
+            border-radius: 100px;
+            margin-left: -15px;
+        }
+    }
+    }
+}
+.devider-custom-full-width {
+    width: 100%;
+    height: 1;
+    border-top: 1px solid #22222238;
+}
+.below-header {
+    font-family: "Jost"!important;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+    margin: auto;
+}
+.navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    font-family: "Jost"!important;
+    font-weight: 500;
+    font-size: 14px;
+        ul.menu-items {
+            list-style: none;
+            li {
+                display: inline;
+                padding: 0px 20px;
+            }
+            li a {
+            color: #222;
+            text-decoration: none;
+            transition-duration: 0.3s;
+            &::before {
+                content: "";
+                width: 0px;
+                height: 0px;
+                background: #222;
+            }
+            &:hover {
+                color: #f3caca;
+                transition-duration: 0.3s;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #222;
+                    transition: ease-in;
+                    transition-duration: 0.5s;
+                }
+            }
+        }
+    }
+}
