@@ -1,0 +1,8 @@
+button.HamburgerMenu-Button {
+    border-radius: 0;
+    border: 1px solid #222;
+}
+button.CategoriesDrawer-Button {
+    border-radius: 0px;
+    border: 1px solid #222;
+}

@@ -3,6 +3,10 @@
     height: 50px;
     margin: 0px;
     max-width: 100%;
+    display: none;
+    @media (min-width: 975px) {
+        display: block;
+    }
     .top-header-inner {
         width: 95%;
         margin: auto;
@@ -10,6 +14,19 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 20px;
+        @media (max-width: 975px) {
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            .top-left-menu-container {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center!important;
+                padding: 10px;
+            }
+        }
         .top-left-menu-container {
             width: 50%;
             display: flex;
@@ -53,6 +70,9 @@
                 font-family: 'Jost';
                 color: white;
                 font-size: 16px;
+                @media (max-width: 1024px) {
+                    display: none;    
+                }
             }
         }
         .top-right-menu-container {
@@ -61,6 +81,9 @@
             flex-direction: row;
             justify-content: flex-end;
             align-content: center;
+            @media (max-width:  975px) {
+                display: none;
+            }
             ul.top-right-links {
                 list-style-type: none;
                 li {
@@ -86,11 +109,17 @@
     align-items: center;
     margin: auto;
     padding: 20px 0px;
+    @media (max-width: 975px) {
+        display: none;
+    }
     .search-container {
         width: 33%;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        @media (max-width: 768px) {
+            display: none;
+        }
         .search-container-inner {
             border: 1px solid #22222238;
             width: 50%;
@@ -122,6 +151,12 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        img {
+            width: 50%;
+            @media (max-width: 768px) {
+                width: 70%;
+            }
+        }
     }
     .customer-header-links {
         width: 33%;
@@ -130,6 +165,9 @@
         justify-content: flex-end;
         align-items: center;
         gap: 20px;
+        @media (max-width: 768px) {
+            display: none;
+        }
         .my-account-container svg {
             font-size: 25px;
             margin-right: 10px;
@@ -171,6 +209,12 @@
             margin-left: -15px;
         }
     }
+    .browse-categories-for-mobile {
+        display: block;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
     }
 }
 .devider-custom-full-width {
@@ -188,6 +232,9 @@
     align-items: center;
     max-width: 95%;
     margin: auto;
+    @media (max-width: 975px) {
+        display: none;
+    }
     .browse-categories span.text svg {
         display: inline-block;
         margin-left: 3px;
@@ -234,5 +281,66 @@
                 transition-duration: 0.3s;
             }
         }
+    }
+}
+
+.mobile-header-wrapper {
+    display: block;
+    margin-top: -1px;
+    @media (min-width: 975px) {
+        display: none;
+    }
+    .top-header-mobile {
+        background: #222;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+        select.language-switcher {
+            width: 50%;
+            padding: 5px 45px 5px 10px;
+            background: transparent;
+            border: 1px solid;
+            color: white;
+            &:focus {
+                outline: none;
+                border: 1px solid white;
+            }
+            option {
+                color: black;
+                &:hover {
+                    background-color: #f3caca;
+                }
+            }
+        }
+        select.currency-switcher {
+            width: 50%;
+            padding: 5px 45px 5px 10px;
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            &:focus {
+                outline: none;
+                border: 1px solid white;
+            }
+            option {
+                color: black;
+                &:hover {
+                    background-color: #f3caca;
+                }
+            }
+        }
+    }
+    .middle-header {
+        width: 95%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 10px;
+        
     }
 }

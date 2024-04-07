@@ -17,10 +17,10 @@ const TopHeader = () => {
                 </div>
                 <div className="top-right-menu-container">
                     <ul className="top-right-links">
-                        <li className="link-item"><a href="/">Store Location</a></li>
-                        <li className="link-item"><a href="/">Subscribe</a></li>
-                        <li className="link-item"><a href="/">Gift Cards</a></li>
-                        <li className="link-item"><a href="/">Coupons</a></li>
+                        <li className="link-item"><a href="/store-location">Store Location</a></li>
+                        <li className="link-item"><a href="/subscribe">Subscribe</a></li>
+                        <li className="link-item"><a href="/gift-cards">Gift Cards</a></li>
+                        <li className="link-item"><a href="/coupons">Coupons</a></li>
                     </ul>
                 </div>
             </div>
