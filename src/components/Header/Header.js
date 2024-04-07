@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import TopHeader from "./TopHeader"
-import {CiSearch, CiUser, CiShoppingCart, CiHeart} from "react-icons/ci";
+import {CiSearch, CiUser, CiShoppingCart, CiHeart, CiHeadphones, CiMapPin} from "react-icons/ci";
 import StoreLogo from "../../assets/images/Logo-Color-svg.webp";
 const Header = () => {
     return(
@@ -15,7 +15,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="logo-container">
-                    <img src={StoreLogo} width="200px"/>
+                    <a href="/"><img src={StoreLogo} width="200px"/></a>
                 </div>
                 <div className="customer-header-links">
                     <div className="my-account-container">
@@ -33,21 +33,22 @@ const Header = () => {
             </div>
             <div className="devider-custom-full-width" />
            <div className="below-header">
-           <div className="browse-categories">
-                <span className="text">Browser Categories <IoIosArrowDown /></span>
-            </div>
-            <div className="navbar-wrapper">
-                <ul className="navbar menu-items">
-                    <li className="menu-item"><a href="/" className="menu-item">Home</a></li>
-                    <li className="menu-item"><a href="/" className="menu-item">Shop<IoIosArrowDown /></a></li>
-                    <li className="menu-item"><a href="/about" className="menu-item">About Us</a></li>
-                    <li className="menu-item"><a href="/contact" className="menu-item">Contact Us</a></li>
-                </ul>
-            </div>
             <div className="browse-categories">
-                <span className="text">Browser Categories <IoIosArrowDown /></span>
+                    <span className="text">Browser Categories <IoIosArrowDown /></span>
+                </div>
+                <div className="navbar-wrapper">
+                    <ul className="navbar menu-items">
+                        <li className="menu-item"><a href="/" className="menu-item">Home</a></li>
+                        <li className="menu-item"><a href="/" className="menu-item">Shop<IoIosArrowDown /></a></li>
+                        <li className="menu-item"><a href="/about" className="menu-item">About Us</a></li>
+                        <li className="menu-item"><a href="/contact" className="menu-item">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div className="additional-links">
+                    <span className="text"><CiHeadphones />+(123) 4567 890</span>
+                    
+                </div>
             </div>
-           </div>
         </div>
     );
 }
