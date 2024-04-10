@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Drawer } from 'antd';
+import { CiMenuBurger } from "react-icons/ci";
 import './PartialsStyles.css';
 import CategoriesTabContent from './CategoriesTabContent/CategoriesTabContent'
 
@@ -15,7 +16,7 @@ const CategoriesDrawer = () => {
   return (
     <div className='Drawer'>
       <Button className='CategoriesDrawer-Button' onClick={showDrawer}>
-        Categories
+        <CiMenuBurger style={{marginRight: '10px'}} />Categories
       </Button>
       <Drawer title="Primary Menu" onClose={onClose} open={open} placement={placement}>
         <CategoriesTabContent />

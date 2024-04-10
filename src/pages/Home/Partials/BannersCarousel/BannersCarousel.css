@@ -1,0 +1,92 @@
+.banners-wrapper {
+    max-width: 95%;
+    margin: auto;
+    padding: 50px 0px;
+    .banners-for-desktop {
+        @media (max-width: 1025px) {
+            display: none;
+        }
+        .banner-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            height: 200px;
+            a h3.banner-title {
+                height: auto!important;
+                color: white;
+                &:hover {
+                    color: #f3caca;
+                }
+            }
+            .banner-button {
+                width: 50%;
+                background: white;
+                color: #222;
+                &:hover {
+                    background-color: #f3caca;
+                    color: white;
+                }
+            }
+        }
+    }
+    .banners-for-tablet {
+        @media (min-width: 1024px) {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            display: none
+        }
+        .banner-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            height: 200px;
+            a h3.banner-title {
+                height: auto!important;
+                color: white;
+                &:hover {
+                    color: #f3caca;
+                }
+            }
+            .banner-button {
+                width: 50%;
+                background: white;
+                color: #222;
+                &:hover {
+                    background-color: #f3caca;
+                    color: white;
+                }
+            }
+        }
+    }
+    .banners-for-mobile {
+        @media (min-width: 768px) {
+            display: none;
+        }
+        .banner-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            height: 200px;
+            a h3.banner-title {
+                height: auto!important;
+                color: white;
+                &:hover {
+                    color: #f3caca;
+                }
+            }
+            .banner-button {
+                width: 50%;
+                background: white;
+                color: #222;
+                &:hover {
+                    background-color: #f3caca;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Drawer } from 'antd';
+import { CiMenuBurger } from 'react-icons/ci';
 import './PartialsStyles.css';
 const HamburgerMenu = () => {
   const [open, setOpen] = useState(false);
@@ -13,7 +14,7 @@ const HamburgerMenu = () => {
   return (
     <div className='Drawer'>
       <Button className='HamburgerMenu-Button' onClick={showDrawer}>
-        Menu
+      <CiMenuBurger style={{marginRight: '10px'}} /> Menu
       </Button>
       <Drawer title="Primary Menu" onClose={onClose} open={open} placement={placement}>
         <p>Some contents...</p>
